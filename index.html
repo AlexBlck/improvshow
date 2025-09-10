@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -51,9 +52,7 @@
         </a>
         <!-- Data Link -->
         <a href="https://huggingface.co/datasets/AlexBlck/mets" class="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white font-medium rounded-full shadow-lg hover:bg-gray-700 transition-colors">
-          <span class="icon">
-            <img src="./static/images/huggingface.svg" alt="Hugging Face logo" class="w-5 h-5">
-          </span>
+          <img src="./static/images/huggingface.svg" alt="Hugging Face logo" class="w-5 h-5">
           <span>Data</span>
         </a>
       </div>
@@ -65,13 +64,11 @@
 <section class="py-12 bg-gray-100 text-center">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/improvshow_teaser.png" alt="Placeholder teaser image for ImProvShow project" class="w-full h-auto rounded-lg">
-      </div>
-      <h2 class="mt-6 text-xl text-gray-600">
-        <strong>ImProvShow</strong> is capable of processing sequences of images, optionally accompanied by coarse edit annotations, to produce a succinct and informative summary of the differences. We train it with METS – a novel dataset of long image editing sequences paired with machine annotations and human-written summaries at multiple steps. The presence of visual and/or text information at any edit stage is optional, as denoted with grey arrows.
-      </h2>
+      <img src="./static/images/improvshow_teaser.png" alt="Placeholder teaser image for ImProvShow project" class="w-full h-auto rounded-lg shadow-lg">
     </div>
+    <h2 class="mt-6 text-xl text-gray-600">
+      <strong>ImProvShow</strong> is capable of processing sequences of images, optionally accompanied by coarse edit annotations, to produce a succinct and informative summary of the differences. We train it with METS – a novel dataset of long image editing sequences paired with machine annotations and human-written summaries at multiple steps. The presence of visual and/or text information at any edit stage is optional, as denoted with grey arrows.
+    </h2>
   </div>
 </section>
 
@@ -98,9 +95,7 @@
   <div class="container mx-auto max-w-4xl px-4">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Dataset</h2>
     <div class="text-center mb-12">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/dataset_manipulations.png" alt="Illustration of the different types of manipulations performed." class="w-full h-auto rounded-lg">
-      </div>
+      <img src="./static/images/dataset_manipulations.png" alt="Illustration of the different types of manipulations performed." class="w-full h-auto rounded-lg shadow-lg">
       <p class="mt-4 text-sm text-gray-600">
         Illustration of the different types of manipulations performed. (left) Inpainting is
         done by using the word background as the prompt. (middle) property change is done by
@@ -109,9 +104,7 @@
       </p>
     </div>
     <div class="text-center">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/dataset_sequence.png" alt="An example of a sequence of manipulations in METS, showing original and manipulated images with superimposed masks and annotations." class="w-full h-auto rounded-lg">
-      </div>
+      <img src="./static/images/dataset_sequence.png" alt="An example of a sequence of manipulations in METS, showing original and manipulated images with superimposed masks and annotations." class="w-full h-auto rounded-lg shadow-lg">
       <p class="mt-4 text-sm text-gray-600">
         An example of a sequence of manipulations in METS. The original image is shown in the first column, followed by the manipulated images. The binary masks of the manipulated regions are superimposed on the images. The machine annotations generated during the sequence creation are shown in orange, while the human annotations are shown in blue.
       </p>
@@ -124,9 +117,7 @@
   <div class="container mx-auto max-w-4xl px-4">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Method</h2>
     <div class="text-center">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/method_architecture.png" alt="Architecture of the ImProvShow model." class="w-full h-auto rounded-lg">
-      </div>
+      <img src="./static/images/method_architecture.png" alt="Architecture of the ImProvShow model." class="w-full h-auto rounded-lg shadow-lg">
       <p class="mt-4 text-sm text-gray-600">
         Architecture of the ImProvShow model. The LLaMA-2 language model is conditioned using the multi-modal instruction template, which includes at least two image features and optional auxiliary textual information. All optional content is placed within dashed boxes. The image features extracted from the ViT image encoder are concatenated in groups of 4 and projected to the LLM embedding space.
       </p>
@@ -139,9 +130,7 @@
   <div class="container mx-auto max-w-4xl px-4">
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
     <div class="text-center mb-12">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/results_table1.png" alt="Table 1. Performance evaluation in the IDC-MI setting." class="w-full h-auto rounded-lg">
-      </div>
+      <img src="./static/images/results_table1.png" alt="Table 1. Performance evaluation in the IDC-MI setting." class="w-full h-auto rounded-lg shadow-lg">
       <p class="mt-4 text-sm text-gray-600">
         Table 1. Performance evaluation in the IDC-MI setting shows BLEU-4 (<strong>B4</strong>), CIDEr (<strong>C</strong>),
         METEOR (<strong>M</strong>), ROUGE-L (<strong>R</strong>) and LLM as judge medium (<strong>L (M)</strong>) and high (<strong>L (H)</strong>) scores.
@@ -150,9 +139,7 @@
       </p>
     </div>
     <div class="text-center">
-      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="./static/images/results_table2.png" alt="Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles." class="w-full h-auto rounded-lg">
-      </div>
+      <img src="./static/images/results_table2.png" alt="Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles." class="w-full h-auto rounded-lg shadow-lg">
       <p class="mt-4 text-sm text-gray-600">
         Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles. We compare our model with the state-of-the-art models and report BLEU-4 (<strong>B4</strong>),
         CIDEr (<strong>C</strong>), METEOR (<strong>M</strong>) and ROUGE-L (<strong>R</strong>) scores.
@@ -189,3 +176,4 @@
 
 </body>
 </html>
+/html>
