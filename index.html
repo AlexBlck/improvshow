@@ -64,7 +64,7 @@
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto">
       <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="https://placehold.co/1000x562/E5E7EB/4B5563?text=ImProvShow+Teaser+Image" alt="Placeholder teaser image for ImProvShow project" class="w-full h-auto rounded-lg">
+        <img src="./static/images/improvshow_teaser.png" alt="Placeholder teaser image for ImProvShow project" class="w-full h-auto rounded-lg">
       </div>
       <h2 class="mt-6 text-xl text-gray-600">
         <strong>ImProvShow</strong> is capable of processing sequences of images, optionally accompanied by coarse edit annotations, to produce a succinct and informative summary of the differences. We train it with METS – a novel dataset of long image editing sequences paired with machine annotations and human-written summaries at multiple steps. The presence of visual and/or text information at any edit stage is optional, as denoted with grey arrows.
@@ -97,7 +97,7 @@
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Dataset</h2>
     <div class="text-center">
       <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="https://placehold.co/1200x675/E5E7EB/4B5563?text=Example+of+METS+Dataset+Sequence" alt="An example of a sequence of manipulations in METS, showing original and manipulated images with superimposed masks and annotations." class="w-full h-auto rounded-lg">
+        <img src="./static/images/dataset_sequence.png" alt="An example of a sequence of manipulations in METS, showing original and manipulated images with superimposed masks and annotations." class="w-full h-auto rounded-lg">
       </div>
       <p class="mt-4 text-sm text-gray-600">
         An example of a sequence of manipulations in METS. The original image is shown in the first column, followed by the manipulated images. The binary masks of the manipulated regions are superimposed on the images. The machine annotations generated during the sequence creation are shown in orange, while the human annotations are shown in blue.
@@ -112,7 +112,7 @@
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Method</h2>
     <div class="text-center">
       <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="https://placehold.co/1200x675/E5E7EB/4B5563?text=ImProvShow+Model+Architecture" alt="Architecture of the ImProvShow model." class="w-full h-auto rounded-lg">
+        <img src="./static/images/method_architecture.png" alt="Architecture of the ImProvShow model." class="w-full h-auto rounded-lg">
       </div>
       <p class="mt-4 text-sm text-gray-600">
         Architecture of the ImProvShow model. The LLaMA-2 language model is conditioned using the multi-modal instruction template, which includes at least two image features and optional auxiliary textual information. All optional content is placed within dashed boxes. The image features extracted from the ViT image encoder are concatenated in groups of 4 and projected to the LLM embedding space.
@@ -127,7 +127,7 @@
     <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
     <div class="text-center mb-12">
       <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="https://placehold.co/1200x675/E5E7EB/4B5563?text=Table+1+Performance+Evaluation" alt="Table 1. Performance evaluation in the IDC-MI setting." class="w-full h-auto rounded-lg">
+        <img src="./static/images/results_table1.png" alt="Table 1. Performance evaluation in the IDC-MI setting." class="w-full h-auto rounded-lg">
       </div>
       <p class="mt-4 text-sm text-gray-600">
         Table 1. Performance evaluation in the IDC-MI setting shows BLEU-4 (<strong>B4</strong>), CIDEr (<strong>C</strong>),
@@ -138,7 +138,7 @@
     </div>
     <div class="text-center">
       <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-4">
-        <img src="https://placehold.co/1200x675/E5E7EB/4B5563?text=Table+2+Performance+Evaluation" alt="Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles." class="w-full h-auto rounded-lg">
+        <img src="./static/images/results_table2.png" alt="Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles." class="w-full h-auto rounded-lg">
       </div>
       <p class="mt-4 text-sm text-gray-600">
         Table 2: Image difference captioning performance evaluation on CLEVR-Change and PSBattles. We compare our model with the state-of-the-art models and report BLEU-4 (<strong>B4</strong>),
